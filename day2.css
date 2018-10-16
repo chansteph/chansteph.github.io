@@ -1,0 +1,39 @@
+#name-field{
+    border-radius: 30px;
+    color:blue;
+    font-family: monospace;
+
+.news-title{
+    color: blue;
+    font-family: monospace;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    }
+
+.news-contents{
+    color: coral;
+    font-size:1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.thumbnail{
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+}
+li{
+    display: inline;
+}
+
+h1{
+    color: blue;
+    text-decoration: underline;
+    font-family: monospace;
+    font-size: 1em;
+}
+
+p{
+    font size: 1.2em;
+    border:1px solid yellowgreen;
+}
