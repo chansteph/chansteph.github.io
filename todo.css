@@ -1,0 +1,39 @@
+.priority-high {
+    border-left: 5px solid red;
+}
+.priority-medium {
+    border-left: 5px solid blue;
+}
+.priority-low {
+    border-left: 5px solid greenyellow;
+}
+
+.container {
+    margin-top: 40px;
+}
+h1  {
+    color:#33ccff;
+    font-family: ';
+    font-size: 3em;
+    font-weight: bold
+    {
+title-format {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+}
+
+#todo-list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+.right-justify {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

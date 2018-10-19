@@ -24,45 +24,30 @@ var mkTitle = function(text) {
 }
 
 //create a button
-var button = document.querySelector("clickbtn");
-var counter = 10;
-var updateBottle = function(Bottles){   
+var button = document.querySelector('#anotherLine');
+var counter = 0;
+var updateBottle = function(Bottles) {   
     var img = document.querySelector('#beer')
     img.src = `images/beer.png`;
 }
-    'click', 
-    function(){
-        counter -= 1
-        if (counter < 0)
-            counter = 10;
-        updateBottle(counter);
+    button.addEventListener(
+        'click', 
+        function() {
+            console.log('>>> clicked:',beer);
+            document.body.appendChild(mkBottles(beer));
+            beer -= 1;
     }
-
-
+);
 //Create an <img>
 var bodyElem = document.querySelector('body');
 
 //var title = mkTitle('99 Bottles of Beer')
 //document.body.appendChild(title);
 
-var beer = 99;
 /*
+var beer = 99;
 while (beer >= 1) {
     var bottles = mkBottles(beer);
     document.body.appendChild(bottles);
-    beer -= 1;
-}
-/*
-var line1 = function(bottles) {
-    return (`${bottles} bottles of beer on the wall, ${bottles} bottles of beer.`);
-}
-var line2 = function(bottles) {
-    return (`Take one down and pass it around, ${bottles - 1} bottles of beer on the wall.`);
-}
-var beer = 99;
-while (beer >= 1) {
-    console.log( line1(beer) )
-    console.log(line2(beer))
-    console.log('\n')
     beer -= 1;
 }
